@@ -24,6 +24,9 @@
             padding: 0;
             font-size: 1em;
         }
+        a::after{
+            content: '\00A0\🔗';
+        }
         header{
             background-color: black;
         }
@@ -54,42 +57,49 @@
         }
         main p {
             font-family: var(--font2);
-            font-size: 4vw;
+            font-size: 3.5vw;
         }
         .poesia1, .poesia2{
-            width: 42vmax;
+            width: 42vw;
             padding-left: 10px;
             position: relative;
             left: 30px;
         }
         .poesia1{
             background-color: aqua;
-            color: black;      
+            color: black;
+            padding: 5vw 1vw 10vw 1vw;
+            /* padding: 5vmax 1vmax 10vmax 1vmax; */
+            /* padding: 50px 10px 80px 10px; */
+                  
         }
         .poesia2{
             background-color: rgba(0, 0, 0, 0.432);
-            color: white; 
+            color: white;
+            padding: 0vw 1vw 0vw 1vw;
         }
-        #imagem1{
+        #cordelImagem1{
             background-image: url('./imagens/background001.jpg');
             width: 100vw;
             background-size: cover;
             background-attachment:fixed;
-            padding: 80px 0px 
+            padding: 4vw 0vw 4vw 0;
+            /* padding: 80px 0px 80px 0px;  */
         }
-        #imagem2{
+        #cordelImagem2{
             background-image: url('./imagens/background002.jpg');
             width: 100vw;
             background-size: cover;
             background-attachment:fixed;
-            padding: 80px 0px  
+            padding: 4vw 0vw 4vw 0 ;
+            /* padding: 80px 0px 80px 0px;   */
         }
         footer{
             background-color: black;
             color: white;
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 1.2em;
+            font-size: 2vw;
             padding: 10px; 
         }
         footer a{
@@ -117,7 +127,7 @@
                 Antes que eu caduque
                 Vou dizer tudo em poesia.
             </p>
-            <section id="imagem1">
+            <section id="cordelImagem1">
                 <p class="poesia2">
                     Não é mais como era antes
                     É tudo abreviado
@@ -145,7 +155,7 @@
                 Pra entender como fica
                 Decifre esse rabisco.
             </p>
-            <section id="imagem2">
+            <section id="cordelImagem2">
                 <p class="poesia2">Tenho saudade das cartas
                     Escritas com a própria mão
                     Mandava no mês de Junho
