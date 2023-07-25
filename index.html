@@ -27,7 +27,7 @@
         header{
             background-color: black;
         }
-        header h1, p{
+        header h1, header p {
             color: white;
             text-align: center;
         }
@@ -45,15 +45,12 @@
             font-size: 1.2em;
             padding-bottom: 35px;
         }
-        header p a{
+        header a{
             text-decoration: none;
             color: white;
         }
-        header p a:hover{
+        header a:hover{
             text-decoration: underline;
-        }
-        main{
-            position:absolute;
         }
         main p {
             font-family: var(--font2);
@@ -61,7 +58,7 @@
         }
         .poesia1, .poesia2{
             width: 42vmax;
-            padding-top: 30px;
+            padding-left: 10px;
             position: relative;
             left: 30px;
         }
@@ -70,11 +67,38 @@
             color: black;      
         }
         .poesia2{
-            background-color: black;
+            background-color: rgba(0, 0, 0, 0.432);
             color: white; 
         }
-        
-        
+        #imagem1{
+            background-image: url('./imagens/background001.jpg');
+            width: 100vw;
+            background-size: cover;
+            background-attachment:fixed;
+            padding: 80px 0px 
+        }
+        #imagem2{
+            background-image: url('./imagens/background002.jpg');
+            width: 100vw;
+            background-size: cover;
+            background-attachment:fixed;
+            padding: 80px 0px  
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+            padding: 10px; 
+        }
+        footer a{
+            text-decoration: none;
+            color: white; 
+        }
+        footer a:hover{
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -93,15 +117,18 @@
                 Antes que eu caduque
                 Vou dizer tudo em poesia.
             </p>
-            <p class="poesia2">
-                Não é mais como era antes
-                É tudo abreviado
-                "Você" só tem duas letras
-                O "O" e o "E" foi riscado
-                Para declarar o amor
-                Basta botar uma flor
-                E um coração desenhado.
-            </p>
+            <section id="imagem1">
+                <p class="poesia2">
+                    Não é mais como era antes
+                    É tudo abreviado
+                    "Você" só tem duas letras
+                    O "O" e o "E" foi riscado
+                    Para declarar o amor
+                    Basta botar uma flor
+                    E um coração desenhado.
+                </p>
+            </section>
+
             <p class="poesia1">Arroba agora não pesa
                 É parte de um endereço
                 Ponto final nem se usa
@@ -118,14 +145,16 @@
                 Pra entender como fica
                 Decifre esse rabisco.
             </p>
-            <p class="poesia2">Tenho saudade das cartas
-                Escritas com a própria mão
-                Mandava no mês de Junho
-                Só chegava no Verão
-                Mas matava a saudade
-                Era texto de verdade
-                Nas linhas do coração.
-            </p>
+            <section id="imagem2">
+                <p class="poesia2">Tenho saudade das cartas
+                    Escritas com a própria mão
+                    Mandava no mês de Junho
+                    Só chegava no Verão
+                    Mas matava a saudade
+                    Era texto de verdade
+                    Nas linhas do coração.
+                </p>
+            </section>
             <p class="poesia1">Agora, escrevo e envio
                 Chegando na mesma hora
                 Mas quando vou prosear
@@ -145,7 +174,7 @@
         </section>
     </main>
     <footer>
-        <p>Site criado por Cleber Priego</p>
+        <p>Site criado por <a href="https://github.com/CleberPriego" target="_blank" rel="noopener noreferrer">Cleber Priego</a></p>
     </footer>
 </body>
 </html>
