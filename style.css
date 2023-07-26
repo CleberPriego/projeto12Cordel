@@ -17,9 +17,6 @@
     padding: 0;
     font-size: 1em;
 }
-html{
-    font-size: 16px;
-}
 a::after{
     content: '\00A0\🔗';
 }
@@ -60,7 +57,7 @@ main p {
     left: 30px;
 }
 .poesia1{
-    background-color: aqua;
+    /* background-color: aqua; */
     color: black;
     padding: 5vw 1vw 10vw 1vw;
     /* padding: 5vmax 1vmax 10vmax 1vmax; */
