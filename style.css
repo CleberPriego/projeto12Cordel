@@ -17,6 +17,9 @@
     padding: 0;
     font-size: 1em;
 }
+html{
+    font-size: 16px;
+}
 a::after{
     content: '\00A0\🔗';
 }
@@ -47,7 +50,8 @@ header a:hover{
 }
 main p {
     font-family: var(--font2);
-    font-size: 3.5vw;
+    font-size: 3vmax;
+    /* font-size: 3.5vw; */
 }
 .poesia1, .poesia2{
     width: 42vw;
@@ -56,7 +60,7 @@ main p {
     left: 30px;
 }
 .poesia1{
-    /* background-color: aqua; */
+    background-color: aqua;
     color: black;
     padding: 5vw 1vw 10vw 1vw;
     /* padding: 5vmax 1vmax 10vmax 1vmax; */
